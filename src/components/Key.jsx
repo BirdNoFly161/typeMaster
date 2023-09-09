@@ -138,7 +138,7 @@ const Key = (props) => {
         window.addEventListener('keyup', handleKeyUp)
         return ()=>{
             window.removeEventListener('keydown', handleKeyDown)
-            window.removeEventListener('keyup', handleKeyDown)
+            window.removeEventListener('keyup', handleKeyUp)
         }
 
     })
