@@ -10,16 +10,11 @@ function Navbar() {
         <div className="w-[calc(100vw - .5rem)] bg-primary h-12 flex justify-between p-2">
             <button
                 onClick={() => {
-                    navigate(-1);
+                    navigate('/');
                 }}
             >
                 <BsChevronLeft className="w-8 h-8 bg-secondary text-black rounded-2xl hover:text-accent hover:scale-110 hover:shadow-surround hover:shadow-accent transition-all relative left-0" />
             </button>
-            <div className="flex grow justify-center gap-4">
-                <StyledLink link="/mainmenu" title="Main Menu" />
-
-                <StyledLink link="/about" title="About" />
-            </div>
         </div>
     );
 }
